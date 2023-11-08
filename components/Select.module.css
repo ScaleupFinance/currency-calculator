@@ -32,7 +32,7 @@
   -webkit-appearance: none;
   /*  other styles for aesthetics */
   width: 100%;
-  padding: 0.675em 1em 0.675em 1em;
+  padding: 0.675em 1em 0.675em 0;
   background-color: #fff;
   border: transparent;
   border-radius: 0.25rem;
