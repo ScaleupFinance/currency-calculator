@@ -1,44 +1,41 @@
 "use client";
 
-import styles from "./Converter.module.css";
-import Image from "next/image";
-import { Select } from "./Select";
 import { useState } from "react";
+import { Footer } from "./Footer";
+import { Form } from "./Form";
+import { Header } from "./Header";
+import { round } from "@/utils/round";
+
+export const rates = {
+  DKK: {
+    DKK: "1",
+    GBP: "0.11673411164863415",
+  },
+  GBP: {
+    DKK: "8.56747833295657",
+    GBP: "1",
+  },
+};
 
 export const Converter = () => {
   const [base, setBase] = useState("DKK");
   const [target, setTarget] = useState("GBP");
 
-  const handleBaseChange = (event) => {
-    setBase(event.target.value);
-  };
-
-  const handleTargetChange = (event) => {
-    setTarget(event.target.value);
-  };
-
   return (
-    <div className={styles.converter}>
-      <div>
-        <label className={styles.label} htmlFor="amount">
-          Amount
-        </label>
-        <Select value={base} onChange={handleBaseChange} />
-        <input className={styles.input} id="amount" type="number" />
-      </div>
-      <div>
-        <hr className={styles.separtor} />
-        <button className={styles.swap}>
-          <Image src="/swap.svg" alt="Swap" width={14.5} height={20} />
-        </button>
-      </div>
-      <div>
-        <label className={styles.label} htmlFor="converted">
-          Converted Amount
-        </label>
-        <Select value={target} onChange={handleTargetChange} />
-        <input className={styles.input} id="amount" type="number" />
-      </div>
-    </div>
+    <>
+      <Header />
+      <Form
+        rates={rates}
+        base={base}
+        target={target}
+        onChangeBase={setBase}
+        onChangeTarget={setTarget}
+      />
+      <Footer
+        baseCurrency={base}
+        rate={round(Number(rates[base][target]))}
+        targetCurrency={target}
+      />
+    </>
   );
 };

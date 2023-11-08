@@ -1,0 +1,18 @@
+.tasks {
+  position: absolute;
+  bottom: 2rem;
+  left: calc(50% - 400px);
+  max-width: 800px;
+  border: 1px solid #fbbf24;
+  border-radius: 5px;
+  background-color: #ffedd5;
+  padding: 1rem;
+}
+.list {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.list li {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
