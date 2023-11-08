@@ -29,7 +29,7 @@ export const Form = ({ rates, base, target, onChangeBase, onChangeTarget }) => {
   };
 
   return (
-    <div className={styles.converter}>
+    <div className={styles.form}>
       <div>
         <label className={styles.label} htmlFor="amount">
           Amount
