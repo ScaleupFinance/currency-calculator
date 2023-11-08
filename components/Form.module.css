@@ -20,6 +20,9 @@
   font-weight: 600;
   padding: 10px 15px;
 }
+.separatorWrapper {
+  position: relative;
+}
 .separator {
   border: none;
   border-top: 1px solid #e7e7ee;

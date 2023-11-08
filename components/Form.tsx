@@ -50,8 +50,8 @@ export const Form = ({ rates, base, target, onChangeBase, onChangeTarget }) => {
           />
         </div>
       </div>
-      <div>
-        <hr className={styles.separtor} />
+      <div className={styles.separatorWrapper}>
+        <hr className={styles.separator} />
         <button className={styles.swap}>
           <Image src="/swap.svg" alt="Swap" width={16} height={20} />
         </button>
