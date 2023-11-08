@@ -9,7 +9,7 @@ import { round } from "@/utils/round";
 export const Form = ({ rates, base, target, onChangeBase, onChangeTarget }) => {
   const [amount, setAmount] = useState(100);
   const [converted, setConverted] = useState(
-    round(100 * Number(rates.DKK.EUR))
+    round(100 * Number(rates.DKK.GBP))
   );
 
   useEffect(() => {
@@ -50,7 +50,7 @@ export const Form = ({ rates, base, target, onChangeBase, onChangeTarget }) => {
       <div>
         <hr className={styles.separtor} />
         <button className={styles.swap}>
-          <Image src="/swap.svg" alt="Swap" width={14.5} height={20} />
+          <Image src="/swap.svg" alt="Swap" width={16} height={20} />
         </button>
       </div>
       <div>

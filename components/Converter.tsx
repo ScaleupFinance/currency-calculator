@@ -5,6 +5,7 @@ import { Footer } from "./Footer";
 import { Form } from "./Form";
 import { Header } from "./Header";
 import { round } from "@/utils/round";
+import styles from "./Converter.module.css";
 
 export const rates = {
   DKK: {
@@ -22,7 +23,7 @@ export const Converter = () => {
   const [target, setTarget] = useState("GBP");
 
   return (
-    <>
+    <div className={styles.converter}>
       <Header />
       <Form
         rates={rates}
@@ -36,6 +37,6 @@ export const Converter = () => {
         rate={round(Number(rates[base][target]))}
         targetCurrency={target}
       />
-    </>
+    </div>
   );
 };
