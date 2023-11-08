@@ -3,7 +3,7 @@
 ### STEP 1: Clone the project
 
 ```bash
-git clone
+git clone https://github.com/ScaleupFinance/currency-calculator.git
 ```
 
 ### STEP 2: Install dependecies
