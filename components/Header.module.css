@@ -1,12 +1,14 @@
 .header {
+  margin-bottom: 30px;
   text-align: center;
 }
-.h1 {
+.title {
   color: #1f2261;
   font-size: 25px;
   font-weight: 700;
 }
-.p {
+.content {
+  margin-top: 10px;
   color: #808080;
   font-size: 16px;
   font-weight: 400;

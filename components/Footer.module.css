@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 29px;
   text-align: center;
 }
 .label {
@@ -7,6 +8,7 @@
   font-weight: 400;
 }
 .rate {
+  margin-top: 13px;
   color: #000;
   font-size: 18px;
   font-weight: 500;
