@@ -34,18 +34,21 @@ export const Form = ({ rates, base, target, onChangeBase, onChangeTarget }) => {
         <label className={styles.label} htmlFor="amount">
           Amount
         </label>
-        <Select
-          options={Object.keys(rates)}
-          value={base}
-          onChange={handleBaseChange}
-        />
-        <input
-          className={styles.input}
-          id="amount"
-          type="text"
-          value={amount}
-          onChange={handleAmountChange}
-        />
+        <div className={styles.inputRow}>
+          <Select
+            className={styles.select}
+            options={Object.keys(rates)}
+            value={base}
+            onChange={handleBaseChange}
+          />
+          <input
+            className={styles.input}
+            id="amount"
+            type="text"
+            value={amount}
+            onChange={handleAmountChange}
+          />
+        </div>
       </div>
       <div>
         <hr className={styles.separtor} />
@@ -57,18 +60,21 @@ export const Form = ({ rates, base, target, onChangeBase, onChangeTarget }) => {
         <label className={styles.label} htmlFor="converted">
           Converted Amount
         </label>
-        <Select
-          options={Object.keys(rates)}
-          value={target}
-          onChange={handleTargetChange}
-        />
-        <input
-          className={styles.input}
-          id="amount"
-          type="text"
-          value={converted}
-          readOnly
-        />
+        <div className={styles.inputRow}>
+          <Select
+            className={styles.select}
+            options={Object.keys(rates)}
+            value={target}
+            onChange={handleTargetChange}
+          />
+          <input
+            className={styles.input}
+            id="amount"
+            type="text"
+            value={converted}
+            readOnly
+          />
+        </div>
       </div>
     </div>
   );
