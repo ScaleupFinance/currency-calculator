@@ -14,13 +14,7 @@ npm install
 yarn
 ```
 
-### STEP 3: Rename env
-
-```bash
-mv .env.local.example .env.local
-```
-
-### STEP 4: Start the development server
+### STEP 3: Start the development server
 
 ```bash
 npm run dev

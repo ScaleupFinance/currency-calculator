@@ -1,10 +1,10 @@
 "use client";
 
 import styles from "./Form.module.css";
-import Image from "next/image";
-import { Select } from "./Select";
-import { useEffect, useState } from "react";
+import { Select } from "./common/Select";
+import { ChangeEvent, useEffect, useState } from "react";
 import { round } from "@/utils/round";
+import { Separator } from "./Separator";
 
 export const Form = ({ rates, base, target, onChangeBase, onChangeTarget }) => {
   const [amount, setAmount] = useState(100);
@@ -31,18 +31,14 @@ export const Form = ({ rates, base, target, onChangeBase, onChangeTarget }) => {
   return (
     <div className={styles.form}>
       <div>
-        <label className={styles.label} htmlFor="amount">
-          Amount
-        </label>
+        <label htmlFor="amount">Amount</label>
         <div className={styles.inputRow}>
           <Select
-            className={styles.select}
             options={Object.keys(rates)}
             value={base}
             onChange={handleBaseChange}
           />
           <input
-            className={styles.input}
             id="amount"
             type="text"
             value={amount}
@@ -50,19 +46,15 @@ export const Form = ({ rates, base, target, onChangeBase, onChangeTarget }) => {
           />
         </div>
       </div>
-      <div className={styles.separatorWrapper}>
-        <hr className={styles.separator} />
-        <button className={styles.swap}>
-          <Image src="/swap.svg" alt="Swap" width={16} height={20} />
-        </button>
-      </div>
+
+      <Separator />
+
       <div>
         <label className={styles.label} htmlFor="converted">
           Converted Amount
         </label>
         <div className={styles.inputRow}>
           <Select
-            className={styles.select}
             options={Object.keys(rates)}
             value={target}
             onChange={handleTargetChange}

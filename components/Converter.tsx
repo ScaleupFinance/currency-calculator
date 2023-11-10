@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Footer } from "./Footer";
+import { Footer } from "./common/Footer";
 import { Form } from "./Form";
-import { Header } from "./Header";
+import { Header } from "./common/Header";
 import { round } from "@/utils/round";
 import styles from "./Converter.module.css";
 
@@ -25,6 +25,7 @@ export const Converter = () => {
   return (
     <div className={styles.converter}>
       <Header />
+
       <Form
         rates={rates}
         base={base}
@@ -32,6 +33,7 @@ export const Converter = () => {
         onChangeBase={setBase}
         onChangeTarget={setTarget}
       />
+
       <Footer
         baseCurrency={base}
         rate={round(Number(rates[base][target]))}
