@@ -11,8 +11,9 @@ const tasks = (path: string) => [
       url: "https://www.figma.com/file/UP7twWG1B1iZgwyx2fstFl/Currency-Converter?type=design&mode=dev",
     },
     items: [
-      `Center the <pre>Converter</pre> component on the page, <a href='vscode://file/${path}/app/page.module.css'>app/page.module.css</a>`,
+      `Center the content on the page, <a href='vscode://file/${path}/app/page.module.css'>app/page.module.css</a>`,
       `Fix the <pre>Form</pre> component styling, <a href='vscode://file/${path}/components/Form.module.css'>components/Form.module.css</a>`,
+      `Fix the <pre>Separator</pre> component styling, <a href='vscode://file/${path}/components/Separator.module.css'>components/Separator.module.css</a>`,
     ],
   },
   {
