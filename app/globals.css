@@ -40,6 +40,7 @@ label {
   font-weight: 400;
 }
 input {
+  width: 145px;
   border: none;
   border-radius: 7px;
   background: #efefef;
@@ -52,7 +53,7 @@ input {
 
 .select-wrapper {
   position: relative;
-  width: 100px;
+  width: 80px;
 }
 
 .select-wrapper::before,
@@ -71,11 +72,11 @@ input {
   position: absolute;
   width: 10px;
   height: 10px;
-  border-bottom: 2px solid #3c3c3c;
-  border-right: 2px solid #3c3c3c;
+  border-bottom: 2px solid #3c3c3c50;
+  border-right: 2px solid #3c3c3c50;
   transform: rotate(45deg);
   right: 14px;
-  top: calc(50% - 5px);
+  top: calc(50% - 7px);
 }
 
 select {
