@@ -6,7 +6,13 @@
 git clone https://github.com/ScaleupFinance/currency-calculator.git
 ```
 
-### STEP 2: Install dependecies
+### STEP 2: Open the folder
+
+```bash
+cd currency-calculator
+```
+
+### STEP 3: Install dependecies
 
 ```bash
 npm install
@@ -14,7 +20,7 @@ npm install
 yarn
 ```
 
-### STEP 3: Start the development server
+### STEP 4: Start the development server
 
 ```bash
 npm run dev
