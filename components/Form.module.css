@@ -1,17 +1,7 @@
 .form {
-  background-color: #ffffff;
+  /* add styling for form container */
 }
 
 .inputRow {
-  /* components should be in same line away from each other */
-}
-.separatorWrapper {
-  position: relative;
-}
-.separator {
-  border: none;
-  border-top: 1px solid #e7e7ee;
-}
-.swap {
-  background-color: #26278d;
+  /* components should be in same line, away from each other */
 }

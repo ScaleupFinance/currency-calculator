@@ -1,11 +1,6 @@
 .separatorWrapper {
-  position: relative;
-}
-.separator {
-  border: none;
-  border-top: 1px solid #e7e7ee;
+  /* fix spacing and think about position */
 }
 .swap {
-  background-color: #26278d;
-  border: none;
+  /* styling for the button */
 }
