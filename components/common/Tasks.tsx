@@ -30,7 +30,7 @@ const tasks = (path: string) => [
       url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
     },
     items: [
-      `Replace hard coded currencies with data fetched from <pre>http://localhost:3000/api/currencies</pre> with Fetch API. <br/>Use either server side fetching on <a href='vscode://file/${path}/app/page.tsx'>app/page.tsx</a><br/>or client side fetching on <a href='vscode://file/${path}/components/Converter.tsx'>components/Converter.tsx</a>`,
+      `Replace hard coded currencies with data fetched from <pre>http://localhost:3000/api/currencies</pre> with Fetch API.<br/>Use either server side fetching on <a href='vscode://file/${path}/app/page.tsx'>app/page.tsx</a><br/>or client side fetching on <a href='vscode://file/${path}/components/Converter.tsx'>components/Converter.tsx</a><br/>To see the response, you can open <a href='/api/currencies' target='_blank'>API in browser</a>`,
     ],
   },
   {

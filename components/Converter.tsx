@@ -9,12 +9,12 @@ import styles from "./Converter.module.css";
 
 export const rates = {
   DKK: {
-    DKK: "1",
-    GBP: "0.11673411164863415",
+    DKK: 1,
+    GBP: 0.11673411164863415,
   },
   GBP: {
-    DKK: "8.56747833295657",
-    GBP: "1",
+    DKK: 8.56747833295657,
+    GBP: 1,
   },
 };
 

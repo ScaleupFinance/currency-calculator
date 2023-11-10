@@ -7,13 +7,11 @@ import { round } from "@/utils/round";
 import { Separator } from "./Separator";
 
 export const Form = ({ rates, base, target, onChangeBase, onChangeTarget }) => {
-  const [amount, setAmount] = useState("100");
-  const [converted, setConverted] = useState(
-    round(100 * Number(rates.DKK.GBP))
-  );
+  const [amount, setAmount] = useState(100);
+  const [converted, setConverted] = useState(round(100 * rates.DKK.GBP));
 
   useEffect(() => {
-    setConverted(round(Number(amount) * Number(rates[base][target])));
+    setConverted(round(amount * rates[base][target]));
   }, [amount, base, rates, target]);
 
   const handleBaseChange = (event) => {
@@ -25,7 +23,7 @@ export const Form = ({ rates, base, target, onChangeBase, onChangeTarget }) => {
   };
 
   const handleAmountChange = (event) => {
-    setAmount(event.target.value);
+    setAmount(Number(event.target.value));
   };
 
   return (
