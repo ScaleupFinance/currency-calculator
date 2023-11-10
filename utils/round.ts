@@ -1,1 +1,1 @@
-export const round = (currency) => Math.round(currency * 100) / 100;
+export const round = (currency: number) => Math.round(currency * 100) / 100;

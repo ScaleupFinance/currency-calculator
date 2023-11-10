@@ -1,4 +1,4 @@
-export const rates = {
+const rates = {
   DKK: {
     DKK: 1,
     GBP: 0.11673411164863415,
