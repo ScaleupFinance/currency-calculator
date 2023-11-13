@@ -2,5 +2,9 @@
   /* fix spacing and think about position */
 }
 .swap {
-  /* styling for the button */
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-color: #26278d;
+  /* finalize the styling for the button */
 }
