@@ -7,7 +7,13 @@ import { Header } from "./common/Header";
 import { round } from "@/utils/round";
 import styles from "./Converter.module.css";
 
-export const rates = {
+export interface Rates {
+  [key: string]: {
+    [key: string]: number;
+  };
+}
+
+export const rates: Rates = {
   DKK: {
     DKK: 1,
     GBP: 0.11673411164863415,

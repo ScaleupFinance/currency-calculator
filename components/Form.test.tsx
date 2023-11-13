@@ -1,13 +1,23 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { Form } from "./Form";
-import { rates } from "./Converter";
+
+const ratesMock = {
+  DKK: {
+    DKK: 1,
+    GBP: 0.11673411164863415,
+  },
+  GBP: {
+    DKK: 8.56747833295657,
+    GBP: 1,
+  },
+};
 
 describe("Form", () => {
   it("renders a form", () => {
     render(
       <Form
-        rates={rates}
+        rates={ratesMock}
         base="DKK"
         target="GBP"
         onChangeBase={() => {}}
