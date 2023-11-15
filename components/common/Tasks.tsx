@@ -31,7 +31,7 @@ const tasks = (path: string) => [
       },
     ],
     items: [
-      "Fix all Typescript errors in the project.<br/><pre>npm run build</pre> or <pre>yarn build</pre> must pass without errors",
+      "Fix all Typescript errors in the project.<br/><pre>npm run lint</pre> or <pre>yarn lint</pre> must pass without errors",
     ],
   },
   {
